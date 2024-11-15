@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preguntes i Anàlisi</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="bg-blue-500 text-white text-center p-5">
+      <h1 class="text-4xl">Preguntes i Anàlisi</h1>
+    </header>
+
+    <nav class="bg-gray-100 py-4 text-center">
+      <a
+        href="index.html"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >Tornar a les Imatges</a
+      >
+    </nav>
+
+    <main class="p-10 text-left">
+      <h2 class="text-2xl font-bold text-gray-800 mb-5">Tasca 2: Anàlisi</h2>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700">Logotip</h3>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>El format òptim per un logotip és PNG, ja que permet una bona qualitat amb un fons transparent, i és més adequat per a imatges amb detalls nítids.</li>
+          <li>Es podria reduir una mica la mida utilitzant compressió, però no massa per no perdre la qualitat, especialment si hi ha transparència en el logotip.</li>
+        </ul>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700">
+          Fotografia i Paisatge
+        </h3>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>El format òptim per fotografies és JPEG, ja que utilitza compressió amb pèrdua, permetent una mida de fitxer més petita sense perdre massa qualitat en imatges amb gradients o molts colors.</li>
+          <li>Amb una compressió de 75-85% no es perd qualitat visible en la majoria de casos.</li>
+          <li>Es pot reduir la mida encara més, però pot començar a afectar la qualitat a mesura que augmentem la compressió, especialment en imatges detallades.</li>
+          <li>Desar una imatge en format JPEG diverses vegades reduiria la qualitat a causa de la compressió amb pèrdua en cada desament successiu.</li>
+        </ul>
+      </div>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700">
+          Imatge amb Transparència
+        </h3>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>El format òptim per una imatge amb transparència és PNG, ja que permet transparència sense perdre qualitat. GIF també té transparència, però només accepta un color transparent (no permet transparències parcials).</li>
+          <li>Si deseguem la imatge en format JPEG, es perdria la transparència, ja que JPEG no suporta transparència.</li>
+          <li>Si la nostra web té un fons blanc, el format més òptim seria JPEG si la transparència no és necessària, ja que el JPEG pot oferir una mida de fitxer més petita per a imatges amb un fons uniforme com el blanc.</li>
+        </ul>
+      </div>
+
+      <h2 class="text-2xl font-bold text-gray-800 mb-5">
+        Tasca 3: DeveloperTools - Lighthouse
+      </h2>
+
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold text-gray-700">
+          Rendiment d'imatges
+        </h3>
+        <ul class="list-disc pl-5 text-gray-700">
+          <li>Lighthouse pot indicar que les imatges no estan optimitzades o que es poden carregar en formats més eficients com WebP.</li>
+          <li>Els problemes habituals inclouen imatges massa grans, falta de compressió o no utilitzar lazy loading.</li>
+          <li>Les imatges grans triguen més a carregar, afectant negativament l'experiència de l'usuari.</li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
