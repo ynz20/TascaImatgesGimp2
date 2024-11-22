@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <nav class="bg-gray-100 py-4 text-center">
+        <a
+            href="index.html"
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+            Tornar
+        </a>
+    </nav>
+    <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+        <!-- FOTO 1 -->
+        <div class="bg-white shadow-md rounded-lg border">
+            <img src="images/imatgesTasca2/Foto1.jpg" alt="Example 1" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto original 1</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto1.webp" alt="GIF Example" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto webp (75% de qualitat) </p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto1.avif" alt="JPG Compressió Mitja" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto Avif (50% de qualitat)</p>
+            </div>
+        </div>
+
+        <!-- FOTO 2 -->
+        <div class="bg-white shadow-md rounded-lg border">
+            <img src="images/imatgesTasca2/Foto2.jpg" alt="Example 2" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto original 2</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto2.webp" alt="GIF Example" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto webp (65% de qualitat)</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto2.avif" alt="JPG Compressió Mitja" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto Avif (50% de qualitat)</p>
+            </div>
+        </div>
+
+        <!-- FOTO 3 -->
+        <div class="bg-white shadow-md rounded-lg border">
+            <img src="images/imatgesTasca2/Foto3.jpg" alt="Example 3" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto original 3</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto3.webp" alt="GIF Example" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto webp (30% de qualitat)</p>
+            </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+            <img src="images/imatgesTasca2/Foto3.avif" alt="JPG Compressió Mitja" class="w-full" />
+            <div class="image-info p-4">
+                <p class="text-gray-700 font-semibold">Foto Avif (40% de qualitat)</p>
+            </div>
+        </div>
+
+        <!-- Secció de pregunta i resposta -->
+        <section class="bg-gray-100 p-6 mt-10 rounded shadow-md col-span-3">
+            <h2 class="text-2xl font-bold text-blue-600 mb-4">
+                Quina és la principal diferència entre AVIF i WebP en termes de compressió i qualitat?
+            </h2>
+            <p class="text-green-700 font-semibold">
+                AVIF ofereix una compressió superior a WebP en termes de mida del fitxer, mantenint una qualitat visual semblant o superior, especialment per a imatges amb detalls complexes.
+            </p>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    
+    <header class="bg-blue-500 text-white text-center p-5">
+        <h1 class="text-4xl">Image Format Experiment</h1>
+    </header>
+    <nav class="bg-gray-100 py-4 text-center">
+        <a
+        href="index.html"
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >Tornar</a>
+    </nav>
+    <main
+        class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5"
+    >
+        <div class="bg-white shadow-md rounded-lg border">
+        <img src="images/imatgesTasca1/original.jpg" alt="Example 1" class="w-full" />
+        <div class="image-info p-4">
+            <p class="text-gray-700 font-semibold">Foto original</p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+        <img src="/images/imatgesTasca1/FotoComprimida.jpg" alt="GIF Example" class="w-full" />
+        <div class="image-info p-4">
+          <p class="text-gray-700 font-semibold">Foto comprimida </p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+        <img src="/images/imatgesTasca1/original.webp" alt="JPG Compressió Mitja" class="w-full" />
+        <div class="image-info p-4">
+          <p class="text-gray-700 font-semibold">Foto webp</p>
+        </div>
+      </div>
+      </div>
+
+      <!-- <section class="p-5">
+        <div class="overflow-x-auto">
+            <table class="min-w-full table-auto border-collapse border border-gray-200">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 px-4 py-2 text-gray-700 text-left">Nom Imatge</th>
+                <th class="border border-gray-300 px-4 py-2 text-gray-700 text-left">Mida Original</th>
+                <th class="border border-gray-300 px-4 py-2 text-gray-700 text-left">JPG (Estalvi/Augment %)</th>
+                <th class="border border-gray-300 px-4 py-2 text-gray-700 text-left">WebP (Estalvi/Augment %)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-4 py-2 text-gray-600">
+                  <img
+                    src="images/imatgesTasca1/original.jpg"
+                    alt="Imatge Original"
+                    class="h-16 w-auto rounded"
+                />
+                </td>
+                <td class="border border-gray-300 px-4 py-2 text-gray-600">2000kB</td>
+                <td class="border border-gray-300 px-4 py-2 text-gray-600">1500kB (25% estalvi)</td>
+                <td class="border border-gray-300 px-4 py-2 text-gray-600">9000kB (350% augment)</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+    </section> -->
+
+    <div class="bg-white shadow-md rounded-lg border">
+      <img src="images/imatgesTasca1/LogotipRIOT.png" alt="Example 1" class="w-full" />
+      <div class="image-info p-4">
+          <p class="text-gray-700 font-semibold">Foto original</p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+      <img src="/images/imatgesTasca1/LogotipRIOT - 70.jpg" alt="GIF Example" class="w-full" />
+      <div class="image-info p-4">
+        <p class="text-gray-700 font-semibold">Foto comprimida  (70% de qualitat)</p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+      <img src="/images/imatgesTasca1/LogotipRIOT.webp" alt="JPG Compressió Mitja" class="w-full" />
+      <div class="image-info p-4">
+        <p class="text-gray-700 font-semibold">Foto webp</p>
+      </div>
+    </div>
+    </div>
+
+    <div class="bg-white shadow-md rounded-lg border">
+      <img src="images/imatgesTasca1/gif.gif" alt="Example 1" class="w-full" />
+      <div class="image-info p-4">
+          <p class="text-gray-700 font-semibold">Foto original (GIF)</p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+      <img src="/images/imatgesTasca1/gif - jpg (80).jpg" alt="GIF Example" class="w-full" />
+      <div class="image-info p-4">
+        <p class="text-gray-700 font-semibold">Foto comprimida </p>
+      </div>
+    </div>
+    <div class="bg-white shadow-md rounded-lg overflow-hidden border">
+      <img src="/images/imatgesTasca1/gif.webp" alt="JPG Compressió Mitja" class="w-full" />
+      <div class="image-info p-4">
+        <p class="text-gray-700 font-semibold">Foto webp</p>
+      </div>
+    </div>
+    </div>
+    </main>
+
+    <section class="bg-gray-50 py-10">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4">Què passa amb el fitxer GIF? Podem utilitzar WebP per reemplaçar-lo?</h2>
+        <p class="text-gray-600 mb-6">
+          Sí, si que podem reemplaçar-lo. De fet, amb la informació que he trobat, és millor utilizar el webp que el gif,ja que el gif té certes limitacions, com la gama de colors, el pes (ja que el webp el redueix), entre altres
+        </p>
+        
+      </div>
+    </section>
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

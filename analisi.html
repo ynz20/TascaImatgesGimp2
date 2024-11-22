@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aspectes per millorar l'accessibilitat i SEO.">
+  <title>Millores d'Accessibilitat i SEO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-900 font-sans">
+  <header class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <h1 class="text-2xl font-bold">Millores d'Accessibilitat i SEO</h1>
+    </div>
+  </header>
+  <nav class="bg-gray-100 py-4 text-center">
+    <a
+    href="index.html"
+    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+    >Tornar</a>
+    <a
+    href="./lighthouse.html"
+    class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+    >Analisi</a>
+</nav>
+  <main class="container mx-auto py-8 px-4">
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-blue-600 mb-4">Aspectes a Millorar</h2>
+      <ul class="space-y-4">
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Compressió d'Imatges</h3>
+          <p class="text-gray-700">
+            Serveix imatges en formats de pròxima generació com WebP per reduir la mida sense perdre qualitat 
+            (estalvi potencial de <strong>478 KiB</strong>). Redimensionar imatges adequadament pot estalviar 
+            <strong>159 KiB</strong>.
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Declaració Explícita de Dimensions</h3>
+          <p class="text-gray-700">
+            Afegir atributs <code>width</code> i <code>height</code> a les etiquetes d'imatges evita moviments de 
+            contingut durant el carregament.
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Eliminació de Recursos Bloquejants</h3>
+          <p class="text-gray-700">
+            Identificar i eliminar recursos que bloquegen la renderització pot estalviar <strong>340 ms</strong>.
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Minimització i Eliminació de JavaScript</h3>
+          <p class="text-gray-700">
+            Minificar el codi JavaScript pot estalviar <strong>42 KiB</strong>. Eliminar JavaScript no utilitzat pot 
+            estalviar fins a <strong>1,130 KiB</strong>.
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Meta Descripció</h3>
+          <p class="text-gray-700">
+            Afegir una meta descripció millora com es mostra la pàgina als resultats de cerca.
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Ordre dels Encapçalaments</h3>
+          <p class="text-gray-700">
+            Mantenir un ordre jeràrquic correcte entre els encapçalaments (H1, H2, H3...).
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Contrast de Colors</h3>
+          <p class="text-gray-700">
+            Ajustar colors de fons i text per complir amb les normes mínimes de contrast (4.5:1).
+          </p>
+        </li>
+        <li class="bg-white p-4 shadow-md rounded-md">
+          <h3 class="font-semibold text-lg text-gray-800">Accessibilitat dels Botons</h3>
+          <p class="text-gray-700">
+            Proporcionar noms accessibles als botons mitjançant <code>aria-label</code> o text visible.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="bg-blue-600 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">&copy; 2024 Millores d'Accessibilitat i SEO</p>
+    </div>
+  </footer>
+</body>
+
+</html>
